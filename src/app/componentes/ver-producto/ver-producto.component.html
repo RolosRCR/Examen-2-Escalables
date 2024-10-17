@@ -1,0 +1,15 @@
+<div class="product-detail">
+  <div class="product-header">
+    <h2 class="product-title">{{ product.title }}</h2>
+  </div>
+
+  <div class="product-body">
+    <img [src]="product.image" alt="Imagen de {{product.title}}" class="product-image">
+
+    <div class="product-info">
+      <p><strong>Categoría:</strong> {{ product.category }}</p>
+      <p><strong>Precio:</strong> ${{ product.price }}</p>
+      <p class="product-description"><strong>Descripción:</strong> {{ product.description }}</p>
+    </div>
+  </div>
+</div>

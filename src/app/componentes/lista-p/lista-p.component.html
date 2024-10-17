@@ -1,0 +1,36 @@
+<div class="container">
+  <h2 class="Titulo">{{title}}</h2>
+
+  <div class="cards-container">
+    <mat-card *ngFor="let products of productos" class="example-card" appearance="outlined">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image">
+          <!-- Mostramos el ID del producto -->
+          <mat-card-title class="id">ID: {{ products.id }}</mat-card-title>
+        </div>
+        <!-- Título del producto -->
+        <mat-card-title>{{ products.title }}</mat-card-title>
+        <!-- Categoría del producto -->
+        <mat-card-subtitle>{{ products.category }}</mat-card-subtitle>
+      </mat-card-header>
+
+      <!-- Imagen del producto -->
+      <img mat-card-image [src]="products.image" alt="Imagen de {{ products.title }}">
+
+      <!-- Descripción del producto -->
+      <mat-card-content class="description">
+        <p>{{ products.description }}</p>
+      </mat-card-content>
+
+      <!-- Precio del producto -->
+      <mat-card-content class="precio">
+        <p>${{ products.price }}</p>
+      </mat-card-content>
+
+      <!-- Botón de comprar -->
+      <mat-card-actions class="actions">
+        <button mat-button class="btn-comprar">Comprar</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

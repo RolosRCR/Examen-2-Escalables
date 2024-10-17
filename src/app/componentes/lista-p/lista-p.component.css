@@ -1,0 +1,78 @@
+/* Contenedor principal de las tarjetas */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrar las tarjetas */
+  gap: 20px; /* Espacio entre tarjetas */
+}
+
+/* Estilo de las tarjetas */
+.example-card {
+  width: 320px; /* Ancho fijo para todas las tarjetas */
+  margin-bottom: 20px; /* Espacio entre tarjetas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.example-card:hover {
+  transform: scale(1.03); /* Zoom suave al pasar el ratón */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Sombras más pronunciadas */
+}
+
+/* Estilo del título principal */
+.Titulo {
+  text-align: center;
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  color: #31339c;
+}
+
+/* Estilo del ID del producto */
+.id {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Imagen del producto */
+mat-card-image {
+  height: 180px;
+  object-fit: contain; /* Asegura que la imagen no se distorsione */
+}
+
+/* Descripción del producto */
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Precio en rojo */
+.precio {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Botón de comprar */
+.btn-comprar {
+  background-color: #31339c;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 15px;
+  margin: 0 auto;
+  display: block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #5052b2;
+  transform: translateY(-3px); /* Efecto de elevación */
+}
+
+/* Centrar botón de comprar */
+.actions {
+  text-align: center;
+}

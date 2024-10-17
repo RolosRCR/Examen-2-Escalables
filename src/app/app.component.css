@@ -1,0 +1,11 @@
+.container{
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.menu-item-selected{
+  color: rgba(255, 83, 83, 0.24);
+}
+.BTN{
+  margin-left: 5px;
+}
